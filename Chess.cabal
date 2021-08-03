@@ -28,7 +28,7 @@ source-repository head
 library
   exposed-modules:
       DataTypes
-      Functions
+      Chess
       Lib
   other-modules:
       Paths_Chess
@@ -36,6 +36,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , containers
   default-language: Haskell2010
 
 executable Chess-exe
@@ -48,6 +49,7 @@ executable Chess-exe
   build-depends:
       Chess
     , base >=4.7 && <5
+    , containers
   default-language: Haskell2010
 
 test-suite Chess-test
